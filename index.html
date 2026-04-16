@@ -8,6 +8,8 @@
     <link rel="icon" href="imgs/logoo4.png">
 </head>
 <body>
+    <div id="site">
+    <script src="index.js"></script>
     <header>
         <nav>
             <img src="imgs/header.png" alt="Header Zombie Attack" class="logo">
@@ -18,15 +20,24 @@
                 <li><a href="#persona">Persona</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
             <a href="jogo" class="jogar">Jogar</a>
+
+            <button onclick="mudarTema()">
+                botao
+            </button>
         </nav>
     </header>
     <section id="home">
+        <div class="seta">
+            <img src="imgs/seta.png" alt="seta para baixo">
+        </div>
         <div class="home-cont">
             <h1>Zombie Attack</h1>
             <p>O mundo caiu. Sobreviva ao apocalipse e ajude Jake a lutar pela sua vida. </p>
             <a href="#" class="bt-jogar">Jogar</a>
         </div>
+        
     </section>
     <section id="sobre">
         <div class="sobre-cs">
@@ -78,5 +89,12 @@
             </div>
             </div>
         </section>
+    </div>
+        <button id="refazer-v" onclick="refazerVerification()" style="display: none;">
+            Refazer Verificação
+        </button>
 </body>
+<footer class="rodape">
+    Desenvolvido por Matheus Milam
+</footer>
 </html>
