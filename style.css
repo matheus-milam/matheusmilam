@@ -6,15 +6,16 @@ body {
     background-color: black;
     color: #cccccc;
     font-family: Arial, Helvetica, sans-serif;
-    
+    padding-top: 60px;
+    margin: 0;
 }
 header {
-    position: fixed;
+     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px;
-    background-color: inherit;
+    height: 30px;
+    background-color: black;
 }
 nav {
     display: flex;
@@ -23,8 +24,17 @@ nav {
     align-items: center;
     gap: 30px;
     border-bottom: 2px solid red;
-    padding: 15px;
     background-color: inherit;
+    
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    margin: 0;
 }
 ul {
     display: flex;
@@ -42,11 +52,13 @@ ul {
             text-decoration: none;
             padding: 8px 15px;
             border-radius: 5px;
-
             transition: 0.3s;
+            display: flex;
         }
     }
 }
+
+
 
 .jogar {
     text-decoration: none;
@@ -83,6 +95,7 @@ ul li a:hover {
     text-align: center;
     background-color: inherit;
     height: 80vh;
+    padding-top: 100px;
 }
 .home-cont h1 {
     font-size: 40px;
@@ -138,11 +151,16 @@ ul li a:hover {
     margin: 10px 0;
     line-height: 1.6;
 }
+
 .sobre-cs:hover {
     border: 1px solid red;
     transition: 0.3s;
 }
-
+.sobre-cs img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 #historia {
     padding: 100px 20px;
     text-align: center;
@@ -222,9 +240,20 @@ ul li a:hover {
 
 @media(max-width: 480px) {
     header {
-        width: 100%;
+        flex-direction: column;
         align-items: center;
-        box-sizing: border-box;
+        gap: 10px;
+        height: auto;
+    }
+    nav ul {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    body {
+        padding-top: 100px;
     }
 }
 
@@ -296,4 +325,43 @@ body.claro #persona p {
 body.claro #contato p {
     background-color: white;
     color: black;
+}
+
+iframe {
+    border: 2px solid red;
+}
+
+.tema {
+    border: 2px solid grey;
+    padding: auto;
+    background-color: black;
+    color: #ccc;
+}
+
+.fechar {
+     display: inline-block;
+    padding: 10px 25px;
+    color: red;
+    border: 2px solid red;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.fechar:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 15px red;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
 }

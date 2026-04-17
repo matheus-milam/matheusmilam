@@ -31,3 +31,15 @@ function refazerVerification() {
         if (idadeVisitante < 18) {
             document.getElementById("refazer-v").style.display = "block";
         }
+
+        function abrirJogo() {
+            document.getElementById("game-cont").style.display = "block"
+        }
+
+
+function fecharJogo() {
+    document.getElementById("game-cont").style.display = "none"
+
+    window.focus();
+    document.body.focus();
+}
